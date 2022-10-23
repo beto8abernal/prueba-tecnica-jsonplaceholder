@@ -1,0 +1,9 @@
+<div class="container text-center">
+    <div class="row">
+        <div class="card card-album" *ngFor="let album of losAlbums$ | async">
+            <div class="card-body">
+                <h5 class="card-title">{{ album.title }}</h5>
+            </div>
+        </div>
+    </div>
+</div>

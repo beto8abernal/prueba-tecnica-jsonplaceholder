@@ -1,0 +1,11 @@
+<div class="container text-center">
+    <div class="row">
+        <div class="card card-post" *ngFor="let post of losPosts$ | async">
+            <div class="card-body">
+                <h5 class="card-title">{{ post.title }}</h5>
+                <p class="card-text">{{ post.body }}</p>
+                <a class="btn btn-primary" (click)="onVerComentarios(post)">Ver comentarios</a>
+            </div>
+        </div>
+    </div>
+</div>

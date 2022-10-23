@@ -1,0 +1,11 @@
+<div class="container text-center">
+    <div class="row">
+        <div class="card card-user" *ngFor="let user of usuarios$ | async">
+            <div class="card-body">
+                <h5 class="card-title">{{ user.name }}</h5>
+                <p class="card-text"><strong>UserName:</strong> {{ user.username }}</p>
+                <span class="badge text-bg-success"><strong>Phone:</strong>{{ user.phone }}</span>
+            </div>
+        </div>
+    </div>
+</div>
