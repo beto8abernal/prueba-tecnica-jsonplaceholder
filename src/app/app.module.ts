@@ -28,8 +28,8 @@ import { PostsEffects } from './state/effects/posts.effects';
     AppRoutingModule,
     HttpClientModule,
     StoreModule.forRoot(ROOT_REDUCERS),
+    EffectsModule.forRoot([UsersEffects, AlbumsEffects, PostsEffects]),
     StoreDevtoolsModule.instrument({ name:'TEST', logOnly: environment.production }),
-    EffectsModule.forRoot([UsersEffects, AlbumsEffects, PostsEffects])
   ],
   providers: [],
   bootstrap: [AppComponent]
